@@ -39,12 +39,17 @@
             margin-left: 3%;
         }
         #cabeca h2{
-            margin-right: 12.5%;
+            margin-right: 10%;
             margin-top: 4%;
             
         }
+        #meio{
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+        }
         #conteudo{
-            margin-left: 28%;
+            
             width: 40%;
             text-align: justify;
             color: white;
@@ -88,6 +93,28 @@
             color: white;
             text-decoration: none;
         }
+        #direita{
+            background-color: rgba(0, 0, 0, 0.801);
+            margin-left: 2%;
+            width: 35%;
+        }
+        #direita img{
+            width: 80%;
+            margin: 5%;
+            margin-left: 10%;
+            position: sticky;
+            top: 10px;
+        }
+        #esquerda{
+            background-color: rgba(0, 0, 0, 0.801);
+            margin-right: 2%;
+        }
+        #esquerda img{
+            width: 90%;
+            margin: 5%;
+            position: sticky;
+            top: 10px;
+        }
         footer{
             background-color: rgba(0, 0, 0, 0.801);
             height: 50px;
@@ -95,8 +122,8 @@
             padding:8px;
             display: flex;
             justify-content: row;
-            margin-left: 28%;
-            width: 40%;
+
+            
         }
         footer a{
             margin-top: 20px;
@@ -104,6 +131,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: white;
             margin-left: 20px;
+            
         }
 
         
@@ -119,71 +147,81 @@
             <a href="https://luigivanzella.github.io/relatorio/">RELATORIO</a>
         </div>
     </div>
-    <div id="conteudo">
-        <form style="text-align: center; ">
-            <div>
-                <label for="texto">Nome:</label>
-                <input type="text" id="texto" placeholder="Informe o seu nome">
-            </div>
-            
-            <div>
-                <label for="CPF">CPF:</label>
-                <input type="number" id="CPF" placeholder="123.456.789-00">
-            </div>
-            
-            <div>
-                <label for="data">Data de nascimento:</label>
-                <input type="date" id="data" placeholder="Informe a sua data de nascimento...">
-            </div>
-            
-            <div>
-                <label for="Peso">Peso:</label>
-                <input type="text" id="Peso" placeholder="Ex: 70Kg">
-            </div>
-            
-            <div>
-                <label for="altura">Altura:</label>
-                <input type="text" id="altura" placeholder="Ex: 1.78m">
-            </div>
-            
-            <div>
-                <label for="E-mail">E-mail:</label>
-                <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
-            </div>
-            
-            <div>
-                <label for="E-mail">2° e-mail:</label>
-                <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
-            </div>
-            
-            <div>
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" placeholder="(16) 91234-5678">
-            </div>
-            
-            <div>
-                <label for="Sexo"></label>
-               sexo:<select id="Sexo">
-                        <option value="" disabled selected>Sexo</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Masculino">Masculino</option>
-                    </select>
-            
-            </div>
-            
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha">
-            </div>
-            
-            <button><a href="https://luigivanzella.github.io/modalidade/"> Finalizar Cadastro</a></button>
-        </form>
+    <div id="meio">
+        <div id="esquerda">
+            <img src="imagem_neon_academia.jpeg" alt="">
+        </div>
+        <div id="conteudo">
+            <form style="text-align: center; ">
+                <div>
+                    <label for="texto">Nome:</label>
+                    <input type="text" id="texto" placeholder="Informe o seu nome">
+                </div>
+                
+                <div>
+                    <label for="CPF">CPF:</label>
+                    <input type="number" id="CPF" placeholder="123.456.789-00">
+                </div>
+                
+                <div>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="data" placeholder="Informe a sua data de nascimento...">
+                </div>
+                
+                <div>
+                    <label for="Peso">Peso:</label>
+                    <input type="text" id="Peso" placeholder="Ex: 70Kg">
+                </div>
+                
+                <div>
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" placeholder="Ex: 1.78m">
+                </div>
+                
+                <div>
+                    <label for="E-mail">E-mail:</label>
+                    <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
+                </div>
+                
+                <div>
+                    <label for="E-mail">2° e-mail:</label>
+                    <input type="email" id="E-mail" placeholder="academiaifsp@gmail.com">
+                </div>
+                
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" placeholder="(16) 91234-5678">
+                </div>
+                
+                <div>
+                    <label for="Sexo"></label>
+                sexo:<select id="Sexo">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                        </select>
+                
+                </div>
+                
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha">
+                </div>
+                
+                <button><a href="https://luigivanzella.github.io/modalidade/"> Finalizar Cadastro</a></button>
+            </form>
+        </div>
+        <div id="direita">
+            <img src="imagemadademia2.jpeg" alt="">
+        </div>
     </div>
     <footer>
+        <div style="margin-left:30%;">
         <a href="https://luigivanzella.github.io/inclua-tudo/">LISTAR TUDO</a>
         <a href="">LISTAR APENAS UM</a>
         <a href="">ALTERAR</a>
         <a href="">EXCLUIR</a>
+        </div>
     </footer>
     
 </body>
